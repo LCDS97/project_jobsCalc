@@ -1,0 +1,33 @@
+{
+  "name": "jobs-calc",
+  "version": "1.0.0",
+  "description": "Project with nodejs to calculate freelance jobs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LCDS97/project_jobsCalc.git"
+  },
+  "keywords": [
+    "node",
+    "freelance",
+    "jobs",
+    "calc",
+    "js"
+  ],
+  "author": "Lucas Conceição dos Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LCDS97/project_jobsCalc/issues"
+  },
+  "homepage": "https://github.com/LCDS97/project_jobsCalc#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
