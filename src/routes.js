@@ -12,9 +12,16 @@ const profile = {
     "vacation-per-year": 4
 }
 
+const jobs = []
+
 routes.get('/', (req, res) => res.render(views + "index"))
 routes.get('/job', (req, res) => res.render(views + "job"))
 routes.get('/job/edit', (req, res) => res.render(views + "job-edit"))
 routes.get('/profile', (req, res) => res.render(views + "profile", { profile }))
+
+routes.post('/job', (req, res) => {
+    jobs.push(req.body)
+    return res.redirect('/')
+})
 
 module.exports = routes;
